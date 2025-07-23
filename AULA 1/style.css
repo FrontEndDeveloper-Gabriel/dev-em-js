@@ -1,0 +1,58 @@
+body {
+    background-color: gray;
+}
+
+.titulo-marketplaces {
+    background-color: yellow;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+
+}
+
+.descricao-marketplaces {
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.links {
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+}
+
+.secao-titulo {
+    background-color: yellow;
+    text-align: center;
+    color: black;
+    font-size: 50px;
+}
+
+.secao-1 {
+    background-color: brown;
+    color: white;
+}
+
+.secao-2 {
+    background-color: brown;
+    color: white;
+}
+
+.secao-3 {
+    background-color: brown;
+    color: white;
+}
+
+.secao-secundaria {
+    background-color: rgb(91, 119, 48);
+    color: white;
+}
+
+.final {
+    background-color: burlywood;
+    color: black;
+    text-align: center;
+    font-size: 19px;
+}
