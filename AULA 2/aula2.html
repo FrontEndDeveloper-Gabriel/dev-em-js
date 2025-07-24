@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 2</title>
+</head>
+
+<body>
+    <h1>AULA 2 - TABELAS E FORMULÁRIOS</h1>
+    <hr>
+    <h2>TABELAS</h2>
+    <table border="6" style="border-top-style: coral; background-color: rgb(101, 101, 179); color: white;">
+        <tr>
+            <th colspan="2">Nome</th>
+            <th colspan="2">Sobrenome</th>
+            <th>Idade</th>
+            <th>Residência</th>
+            <th>Sexo</th>
+        </tr>
+        <tr>
+            <td>Gabriel</td>
+            <td>Ribeiro Silva</td>
+            <td>21</td>
+            <td>Guarulhos - SP</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Lucas</td>
+            <td>Oliveira Soares</td>
+            <td>34</td>
+            <td>São Paulo - SP</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>Ferreira Gomes</td>
+            <td>18</td>
+            <td>Belo Horizonte - MG</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>Victor</td>
+            <td>Souza Silva</td>
+            <td>46</td>
+            <td>Rio de Janeiro - RJ</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td>Maria</td>
+            <td>Menezes Brito</td>
+            <td>15</td>
+            <td>Curitiba - PR</td>
+            <td>F</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="2">
+        <tr>
+            <th colspan="2">TITULO MESCLADO</th>
+            <th colspan="1">TITULO MESCLADO</th>
+
+        </tr>
+        <tr>
+            <td rowspan="2">CELULA MESCLADA (2 LINHAS)</td>
+            <td>LINHA 1 - COLUNA 2</td>
+            <td>LINHA 1 - COLUNA 2</td>
+        </tr>
+        <tr>
+            <td>LINHA 2 - COLUNA 2</td>
+        </tr>
+        <tr>
+            <td>LINHA 3 - COLUNA 1</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+    <table border="6" style="border-top-style: coral;" cellpadding="40" cellspacing="25">
+        <tr style="color: aqua;">
+            <th colspan="2">TITULO MESCLADO</th>
+            <th colspan="1">TITULO MESCLADO</th>
+            <th colspan="1">TITULO MESCLADO</th>
+        </tr>
+        <tr>
+            <td rowspan="2">CELULA MESCLADA (2 LINHAS)</td>
+            <td colspan="2">LINHA 1 - COLUNA 2</td>
+            <td>LINHA 1 - COLUNA 2</td>
+        </tr>
+        <tr>
+            <td>LINHA 2 - COLUNA 2</td>
+        </tr>
+        <tr style="color: blueviolet;">
+
+            <td>LINHA 3 - COLUNA 1</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <h2>FORMULÁRIOS</h2>
+    <form>
+        <label for="">Nome: </label>
+        <input type="text" placeholder="Digite seu nome...">
+        <br>
+        <br>
+        <label for="">Email: </label>
+        <input type="email" placeholder="Digite seu email...">
+        <br>
+        <br>
+        <label for="">Gênero: </label>
+        <select name="generos">
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+            <option value="O">Outros</option>
+        </select>
+        <br>
+        <br>
+        <label for="">Interesses: </label>
+        <input type="checkbox">
+        <label>Tecnologia</label>
+        <input type="checkbox">
+        <label>Culinária</label>
+        <input type="checkbox">
+        <label>Música</label>
+        <input type="checkbox">
+        <label>Esportes</label>
+        <br>
+        <br>
+        <label>Mensagem: </label>
+        <textarea name="mensagem" placeholder="Digite uma mensagem..."></textarea>
+        <br>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+
+</html>
