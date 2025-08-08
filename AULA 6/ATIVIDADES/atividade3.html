@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDITOR DE TEXTO</title>
+    <style>
+        body {
+            background-color: gray;
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .campo {
+            display: flex;
+            align-items: center;
+        }
+
+        .opcaoCor {
+            display: inline-block;
+            width: 20px;
+            border: 1px solid orange;
+            height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>EDITOR DE TEXTO</h1>
+
+    <h3>CAMPO: <textarea class="campo" id="textoInput" placeholder="Digite..."></textarea></h3>
+    <br>
+
+    <h3>ESCOLHA A COR: </h3>
+    <div class="opcaoCor" style="background:red;" onclick="document.getElementById('textoInput').style.color = 'red'"></div>
+    <div class="opcaoCor" style="background: green;"onclick="document.getElementById('textoInput').style.color = 'green'"></div>
+    <div class="opcaoCor" style="background: yellow;"onclick="document.getElementById('textoInput').style.color = 'yellow'"></div>
+    <div class="opcaoCor" style="background: black;"onclick="document.getElementById('textoInput').style.color = 'black'"></div>
+    <br>
+    <br>
+
+    <button class="mostra" onclick="document.getElementsById('mostrar_texto').innerHTML = document.getElementById('textoInput').value">Mostrar</button>
+    <button class="apagar" onclick="document.getElementById('mostrar_texto').innerHTML = ''">Apagar</button>
+
+
+    <h3>Mensagem aparece aqui: <div id="mostrar_texto"></div></h3>
+</body>
+
+</html>

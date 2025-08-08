@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="informacoes_basicas.js"></script>
+    <title>AULA 6</title>
+</head>
+
+<body>
+    <h1>AULA 6 - JAVASCRIPT</h1>
+    <br>
+    <hr>
+    <h2>MÉTODOS BÁSICOS DE SAÍDAS COM JAVASCRIPT</h2>
+    <p>Vai interagir com o ambiente de testes.</p>
+    <button onclick="console.log('Hello World')">Console.log</button>
+    <br>
+    <br>
+    <hr>
+    <p>Vai interagir com caixas de alertas da página.</p>
+    <button onclick="alert('Alert!')">Alert</button>
+    <br>
+    <br>
+    <hr>
+    <p>Vai interagir com o corpo da página.</p>
+    <button onclick="document.write('<h2> Documento Subscrito</h2>')">Document.write</button>
+    <br>
+    <br>
+    <hr>
+    <p>Também vai interagir com o corpo da página.</p>
+    <p id="demo">Texto 1</p>
+    <button onclick="document.getElementById('demo').innerHTML = 'Texto 100000000000'">Document.innerHTML</button>
+</body>
+<script>
+    console.log("Página Carregada!")
+    document.write("<p> Adicionar durante carregamento </p>")
+
+
+    // DADOS PRIMITIVOS
+
+    // REAL, NÚMERO COM PONTO FLUTUANTE
+    var altura = 1.80
+    var peso = 65.5
+    var dinheiro = 100.00
+    var centimetros = 50.2
+        // DINHEIRO, PESO, ALTURA, METRICAS... 
+
+    //INTEIRO - INT, VALORES QUE NÃO POSSUEM PONTO FLUTUANTE
+    0,  - 2,   2
+    let ano = 2025
+    const quantidade_fixa = 5
+
+    let numero = 10
+    alert(numero)
+
+    // TEXTO -  STRINGS  - CARACTERE 
+    var texto = 'texto'
+    var segundoTexto = "texto"
+    let texto2 = '2'
+    const texto3 = 'Isso tb é um texto'
+
+    // DADOS DO TIPO BOLEANO  
+    var verdadeiro = true
+    let falso = false
+    var teste = 'False'
+    let FALSO = 'FALSO'
+        // console.log(FALSO)
+
+
+    // CONCATENAÇÃO
+    let name = "Pedro"
+    console.log('Seja bem-vindo', name, 'Sua idade é ', age)
+    console.log('Seja bem vindo ', name, 'sua idade é ', idade)
+    console.log('Seja bem vindo ', name, 'sua idade é ', idade)
+    console.log('Seja bem vindo ', name, 'sua idade é ', idade)
+    console.log('Seja bem vindo ', name, 'sua idade é ', idade)
+    console.log('Seja bem vindo ', name, 'sua idade é ', idade)
+        // 1 let(DADOS PODEM SER ALTERADOS), const(DADOS CONSTANTES)
+        // 2 UTILIZAR, CHAMAR PELO NOME
+
+
+    // UTILIZANDO VARIÁVEIS
+    const nome = "Gabriel"
+    let endereco = "Rua Arbonito"
+    let idade = 21
+    const cpf = "973.628.157-18"
+    let curso = "JavaScript"
+
+    console.log("Seu nome:", nome)
+    console.log("Seu endereço: ".endereco)
+    console.log("Sua idade: ", idade)
+    console.log("CPF: ", cpf)
+    console.log("Cursando: ", curso)
+
+
+    // UNDEFINED VS NULL
+    let idade_any;
+    let idade_null = null;
+    let idade_zero = 0;
+    let idade_undefined = undefined;
+</script>
+
+</html>
