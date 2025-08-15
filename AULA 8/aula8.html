@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 8</title>
+</head>
+
+<body>
+    <h1>AULA 8 - LOOPS E ARRAYS</h1>
+    <br>
+    <hr>
+    <h2>ARRAYS</h2>
+    <p>
+    <h3>TIPOS COM ARRAYS</h3>
+    <ul>
+        <li>
+            const nome = [] - <strong>Array Vazia</strong>
+        </li>
+        <br>
+        <li>
+            let teste = [1,2,3,0.4,6] - <strong>Array Inteira</strong>
+        </li>
+        <br>
+        <li>
+            let frutas = ['a','b','c','d'] - <strong>Array String</strong><br>
+        </li>
+        <br>
+        <li>
+            let boola = [true, false, false] - <strong>Array Boleana</strong><br>
+        </li>
+        <br>
+        <li>
+            let reais = [0.,.0,1.2,5.0] - <strong>Array Float</strong>
+        </li>
+        <br>
+    </ul>
+    <h3>MÉTODOS COM ARRAYS</h3>
+    <ul>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.copyWithin(2, 0); - <strong>copyWithin()</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.fill("Kiwi"); - <strong>fill()</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.pop(); - <strong>pop()</strong><br>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.push("Kiwi"); - <strong>push(v1, v2)</strong><br>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.reverse(); - <strong>reverse()</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.shift(); - <strong>shift()</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.unshift("Lemon","Pineapple"); - <strong>unshift(v1,v2)</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.sort(); - <strong>sort()</strong>
+        </li>
+        <br>
+        <li>
+            const fruits = ["Banana", "Orange", "Apple", "Mango"]; <br>
+            fruits.splice(2, 0, "Lemon", "Kiwi"); - <strong>splice()</strong>
+        </li>
+        <br>
+    </ul>
+    </p>
+    <br>
+    <hr>
+    <h2>LOOPS</h2>
+    <p>
+    <ul>
+        <li>
+            for (n = 0; n <= 10; n++) { <br>
+                console.log(n) <br>
+                }
+        </li>
+        <br>
+        <li>
+            let arrayNomes = [] <br>
+            let arrayIdades = [] <br>
+            <br>
+            for (i = 1; i <= 10; i +=2) { <br>
+                let nome = prompt('Nome:') <br>
+                arrayNomes.push(nome) <br>
+                console.log(arrayNomes, i)<br>
+                let idade = prompt('Idade:')<br>
+                arrayIdades.push(idade)<br>
+                console.log(arrayIdades, i)<br>
+                }
+        </li>
+    </ul>
+    <h3>forEach</h3>
+    <ul>
+        <li>
+            let array = [1, 2, 3, 4, 5, 6] <br>
+            <br>
+            array.forEach((a) => console.log(a)) <br>
+            <br>
+            // array.forEach(function (a, index)){ <br>
+            // console.log(index, a) <br>
+            // } <br>
+            <br>
+            for (let a of array) { <br>
+            console.log(a) <br>
+            }
+        </li>
+    </ul>
+    <h3>While</h3>
+    <ul>
+        <li>
+            let frutas = ["maçã", "banana", "laranja", "uva"]; <br>
+            let i = 0; <br>
+            <br>
+
+            while (i < frutas.length) { <br>
+                console.log(frutas[i]); i++; <br>
+            }
+        </li>
+    </ul>
+    </p>
+</body>
+<script src="arrays_loops.js"></script>
+
+</html>

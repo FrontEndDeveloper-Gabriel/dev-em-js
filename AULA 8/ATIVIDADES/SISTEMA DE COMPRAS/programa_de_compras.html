@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE COMPRAS</title>
+</head>
+
+<body>
+    <h1>SISTEMA DE COMPRAS</h1>
+    <script>
+        let listaDeCompras = [];
+        let opcao;
+
+        while (opcao !== "4") {
+            opcao = prompt(
+                "Escolha uma opção:\n" +
+                "1 - Adicionar item\n" +
+                "2 - Remover item\n" +
+                "3 - Listar itens\n" +
+                "4 - Sair"
+            );
+
+            if (opcao === "1") {
+                let item = prompt("Digite o nome do item que deseja adicionar:");
+                listaDeCompras.push(item);
+                alert(`"${item}" foi adicionado à lista.`);
+            }
+            else if (opcao === "2") {
+                if (listaDeCompras.length === 0) {
+                    alert("A lista está vazia.");
+                } else {
+                    let item = prompt("Digite o nome do item que deseja remover:");
+                    let index = listaDeCompras.indexOf(item);
+                    if (index !== -1) {
+                        listaDeCompras.splice(index, 1);
+                        alert(`"${item}" foi removido da lista.`);
+                    } else {
+                        alert(`"${item}" não foi encontrado na lista.`);
+                    }
+                }
+            }
+            else if (opcao === "3") {
+                if (listaDeCompras.length === 0) {
+                    alert("A lista está vazia.");
+                } else {
+                    let listaTexto = "Itens na lista:\n";
+                    for (let i = 0; i < listaDeCompras.length; i++) {
+                        listaTexto += `${i + 1}. ${listaDeCompras[i]}\n`;
+                    }
+                    alert(listaTexto);
+                }
+            }
+            else if (opcao === "4") {
+                alert("Saindo do programa...");
+            }
+            else {
+                alert("Opção inválida. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+
+</html>
