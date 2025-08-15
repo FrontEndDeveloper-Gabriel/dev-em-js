@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE 5</title>
+</head>
+
+<body>
+    <h1>CALCULAR IMC</h1>
+</body>
+<script>
+    function calcularIMC() {
+        let peso = parseFloat(prompt('Digite seu peso (kg):'))
+        let altura = parseFloat(prompt('Digite sua altura (m):'))
+        let idade = parseInt(prompt("Digite sua idade: "))
+        let imc = peso / (altura ** 2)
+        console.log("Resultado:", imc)
+
+        if (imc < 16) {
+            console.log("Magreza Grau III")
+        } else if (imc >= 16 && imc <= 16.9) {
+            console.log("Magreza Grau II")
+        } else if (imc >= 17 && imc <= 18.4) {
+            console.log("Magreza Grau I")
+        } else if (imc >= 18.5 && imc <= 24.9) {
+            console.log("Eutrofia")
+        } else if (imc >= 25 && imc <= 29.9) {
+            console.log("Pré-obesidade")
+        } else if (imc >= 30 && imc <= 34.9) {
+            console.log("Obesidade moderada (grau I)")
+        } else if (imc >= 35 && imc <= 39.9) {
+            console.log("Obesidade severa (grau II)")
+        } else if (imc >= 40) {
+            console.log("Obesidade muito severa (grau III)")
+        } else {
+            console.log("Error")
+        }
+    }
+
+    calcularIMC()
+</script>
+
+</html>

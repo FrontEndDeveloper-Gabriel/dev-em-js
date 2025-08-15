@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATIVIDADE 3</title>
+</head>
+
+<body>
+    <h1>VALIDADOR DE SENHAS</h1>
+</body>
+<script>
+    
+    
+    function validarSenha() {
+        let validador_maiusculo =  /[A-Z]/
+        let validar_n = /[0-9]/
+
+        let senha = prompt("Crie sua senha: ")
+
+        if (senha.length = 8 && validador_maiusculo.test(senha)  && validar_n.test(senha))
+            console.log("Senha criada!")
+        else
+        console.log("A senha tem que ter pelo menos uma letra maiuscula, 8 caracteres e um número.")
+    }
+
+    validarSenha()
+</script>
+
+</html>

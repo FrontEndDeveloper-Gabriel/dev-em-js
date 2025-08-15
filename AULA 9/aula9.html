@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA 9</title>
+</head>
+
+<body>
+    <h1>AULA 9 - FUNÇÕES EM JAVASCRIPT</h1>
+
+    <p>
+        Em JavaScript, <strong>funções</strong> são blocos de código reutilizáveis que executam uma tarefa específica.
+        Elas podem receber <em>parâmetros</em> de entrada e retornar um <em>resultado</em>. Funções ajudam a organizar o código,
+        evitam repetição e facilitam a manutenção.
+    </p>
+
+    <script>
+        function calcularIMC(peso, altura) {
+            let imc = peso / (altura ** 2)
+            console.log("IMC calculado com parâmetros:", imc.toFixed(2))
+        }
+
+        let peso = parseFloat(prompt('Digite seu peso (kg):'))
+        let altura = parseFloat(prompt('Digite sua altura (m):'))
+
+        calcularIMC(peso, altura)
+
+        function calcularIMCSemParametros() {
+            let peso = parseFloat(prompt('Digite seu peso (kg):'))
+            let altura = parseFloat(prompt('Digite sua altura (m):'))
+            let imc = peso / (altura ** 2)
+            console.log("IMC calculado sem parâmetros:", imc.toFixed(2))
+        }
+
+        calcularIMCSemParametros()
+    </script>
+</body>
+
+</html>
