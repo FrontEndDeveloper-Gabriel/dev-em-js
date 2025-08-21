@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-COMMERCE - POO</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Produto {
+        constructor(nome, preco) {
+            this.nome = nome;
+            this.preco = preco
+        }
+    }
+
+    class Carrinho {
+        constructor() {
+            this.carrinho = []
+        }
+
+        adicionanarCarrinho(produto) {
+            this.carinho.push(produto)
+            console.log("Produto: ", produto.nome, "Adicionado!")
+        }
+
+        removerProduto(nome) {
+            this.produto = this.carrinho.filter(p => p.nome !== nome)
+            console.log("Produto: ", nome, "Removido!")
+        }
+
+        mostrarCarrinho() {
+            this.carrinho.forEach(p => console.log(p.nome, "$", p.preco));
+            console.log("Carrinho: ")
+
+        }
+
+        totalProduto() {
+            const total = this.carrinho.reduce((soma, p) => soma + p.preco, 0)
+            console.log("R$: ", total)
+        }
+    }
+
+    const carrinho = new Carrinho()
+    const produto1 = new Produto("Camiseta", 10.5)
+    const produto2 = new Produto("Calça", 20.0)
+    const produto3 = new Produto("Meia", 5.7)
+
+    carrinho.adicionanarCarrinho(produto1)
+    carrinho.adicionanarCarrinho(produto2)
+    carrinho.adicionanarCarrinho(produto3)
+    carrinho.removerProduto(produto2)
+
+    carrinho.mostrarCarrinho()
+    carrinho.totalProduto()
+</script>
+
+</html>

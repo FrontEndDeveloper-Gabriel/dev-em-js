@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HORAS TRABALHADAS - POO</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    class Funcionario {
+        constructor(salario, cargaHoraria) {
+            this.salario = salario
+            this.cargaHoraria = cargaHoraria
+        }
+
+        valorHora() {
+            return this.salario / this.cargaHoraria
+        }
+
+        valorHoraExtra() {
+            return this.valorHora() * 1.5
+        }
+    }
+
+    class FolhaPagamento {
+        constructor(funcionario, horasExtras) {
+            this.funcionario = funcionario
+            this.horasExtras = horasExtras
+        }
+
+        totalHorasExtras() {
+            return this.horasExtras * this.funcionario.valorHoraExtra()
+        }
+
+        salarioTotal() {
+            return this.funcionario.salario + this.totalHorasExtras()
+        }
+
+        imprimirResumo() {
+            console.log(`Valor da hora: R$ ${this.funcionario.valorHora().toFixed(2)}`)
+            console.log(`Valor da hora extra (50%): R$ ${this.funcionario.valorHoraExtra().toFixed(2)}`)
+            console.log(`Total de horas extras: ${this.horasExtras}`)
+            console.log(`Total a receber pelas extras: R$ ${this.totalHorasExtras().toFixed(2)}`)
+            console.log(`Salário total: R$ ${this.salarioTotal().toFixed(2)}`)
+        }
+    }
+
+    function sistemaRh() {
+        let salario = parseFloat(prompt('Digite o salário: '))
+        let cargaHoraria = parseFloat(prompt('Digite a carga horária mensal: '))
+        let horasExtras = parseFloat(prompt('Digite a quantidade de horas extras: '))
+
+        const funcionario = new Funcionario(salario, cargaHoraria)
+        const folha = new FolhaPagamento(funcionario, horasExtras)
+
+        folha.imprimirResumo()
+    }
+
+    sistemaRh()
+
+</script>
+
+</html>
