@@ -1,4 +1,7 @@
-# DESENVOLVIMENTO EM JAVASCRIPT
+# DEVELOPMENT IN JAVASCRIPT
 
-<h3>Introdução</h3>
-Repositório destinado as aulas de <strong><i>Desenvolvimento em JavaScript</i></strong> pelo Senai.
+## 📖 About
+```ascii
+> Repository for Senai's JavaScript Development classes.
+```
+**Note: Senai is a Brazilian educational institution.**
